@@ -1,8 +1,6 @@
 import Task, { TaskProps } from './Task';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTaskContext } from '../../context/TaskContext';
-import { useAsync } from '../../hooks/useAsync';
-import { getTasks } from '../../services/Tasks/tasks';
 
 const TaskList = ({ tab }: { tab: string }) => {
     const { tasks } = useTaskContext();

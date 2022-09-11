@@ -8,11 +8,13 @@ const App = () => {
     return (
         <div className='min-h-screen flex'>
             <Sidebar />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/notes' element={<Notes />} />
-                <Route path='/budget' element={<Budget />} />
-            </Routes>
+            <div>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/notes' element={<Notes />} />
+                    <Route path='/budget' element={<Budget />} />
+                </Routes>
+            </div>
         </div>
     );
 };

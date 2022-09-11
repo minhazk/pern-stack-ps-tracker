@@ -15,4 +15,12 @@ model Task {
   name String
   createdAt DateTime @default(now())
   dueDate DateTime
+  completed Boolean @default(false)
+}
+
+model Note {
+  id String @id @default(uuid())
+  title String
+  description String
+  createdAt DateTime @default(now())
 }
